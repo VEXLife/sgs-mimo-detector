@@ -1,0 +1,18 @@
+[project]
+name = "sgs-mimo-detector"
+version = "1.0.0"
+description = "An Efficient MIMO Detector Based on Split Gibbs Sampling (VTC2026-Fall)"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Yuxuan Wei" }]
+requires-python = ">=3.10"
+dependencies = [
+	"numpy>=1.24",
+]
+
+[build-system]
+requires = ["hatchling>=1.21"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sgs_mimo_detector"]
